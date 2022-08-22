@@ -1,0 +1,65 @@
+:root {
+  --border-color: #e5e5e5;
+  --edit-button: #f7f7f7;
+  --del-button: #d93f3f;
+  --create-button: #555a88;
+  --titles-letter: #0f0f2d;
+  --info-letter: #302f2f;
+  --info-title: #d3d3d3;
+}
+.user__card {
+  width: 381px;
+  height: auto;
+  display: grid;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 24px 20px 16px 20px;
+}
+.user__name {
+  font-size: 28px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+.user__info {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 0px 10px 0px;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+.info p:nth-child(1) {
+  margin-bottom: 6px;
+  color: var(--info-title);
+}
+.info p:nth-child(2) {
+  margin-bottom: 3px;
+}
+.user__btns {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  padding-right: 10px;
+  gap: 6px;
+}
+.user__btns .btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__trash {
+  background-color: var(--del-button);
+  border: none;
+}
+.btn__trash:hover {
+  background-color: #da1818;
+  transition: background-color 300ms;
+}
+.btn__edit {
+  background-color: var(--edit-button);
+  border: 1px solid var(--border-color);
+}
+.btn__edit:hover {
+  background-color: #f5f1f1;
+  transition: background-color 300ms;
+}
