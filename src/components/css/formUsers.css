@@ -1,0 +1,82 @@
+:root {
+  --border-color: #e5e5e5;
+  --edit-button: #f7f7f7;
+  --del-button: #d93f3f;
+  --create-button: #555a88;
+  --titles-letter: #0f0f2d;
+  --info-letter: #302f2f;
+  --info-title: #d3d3d3;
+  --input-background: #f1f2f3;
+}
+.form-none {
+  display: none;
+}
+.form__container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+.form {
+  display: grid;
+  gap: 20px;
+  width: 300px;
+  padding: 20px 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  border: var(--border-color);
+  box-shadow: 5px 5px 10px #0f0f2d;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form__item label {
+  font-weight: bold;
+}
+.form__item input {
+  padding-left: 10px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--input-background);
+  color: var(--info-title);
+  width: 250px;
+  outline: none;
+}
+.form__container button {
+  height: 30px;
+  border: none;
+  background-color: var(--create-button);
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form__container button:hover {
+  background-color: #6369a0;
+  transition: background-color 200ms;
+}
+.form__container .btn-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  border: none;
+  background-color: #ffffff;
+}
+.form__container .btn-close:hover {
+  background-color: #bbbbbb;
+  cursor: pointer;
+  transition: background-color 200ms;
+}

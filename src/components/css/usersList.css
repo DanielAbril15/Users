@@ -9,7 +9,7 @@
 }
 .user__card {
   width: 381px;
-  height: auto;
+  height: 300px;
   display: grid;
   border: 1px solid var(--border-color);
   border-radius: 5px;

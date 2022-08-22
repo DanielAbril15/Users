@@ -1,13 +1,18 @@
 import axios from "axios";
 import React from "react";
 import "./css/usersList.css";
-const UsersList = ({ user, getAllUsers }) => {
+
+const UsersList = ({ user, getAllUsers, setUpdateInfo, handleOpenForm }) => {
   const deleteUser = () => {
-    const URL = `https://users-crud1.herokuapp.com/users/${user.id}`;
+    const URL = `https://users-crud1.herokuapp.com/users/${user.id}/`;
     axios
       .delete(URL)
       .then((res) => getAllUsers())
       .catch((err) => console.log(err));
+  };
+  const handleUpdateInfo = () => {
+    handleOpenForm();
+    setUpdateInfo(user);
   };
 
   return (
@@ -31,7 +36,7 @@ const UsersList = ({ user, getAllUsers }) => {
         <button onClick={deleteUser} className="btn btn__trash">
           <img src="../../public/imgs/trash.png" alt="trash button" />
         </button>
-        <button className="btn btn__edit">
+        <button onClick={handleUpdateInfo} className="btn btn__edit">
           <img src="../../public/imgs/edit.png" alt="edit button" />
         </button>
       </div>
