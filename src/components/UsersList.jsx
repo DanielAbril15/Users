@@ -34,10 +34,10 @@ const UsersList = ({ user, getAllUsers, setUpdateInfo, handleOpenForm }) => {
 
       <div className="user__btns">
         <button onClick={deleteUser} className="btn btn__trash">
-          <img src="../../public/imgs/trash.png" alt="trash button" />
+          <img src="/imgs/trash.png" alt="trash button" />
         </button>
         <button onClick={handleUpdateInfo} className="btn btn__edit">
-          <img src="../../public/imgs/edit.png" alt="edit button" />
+          <img src="/imgs/edit.png" alt="edit button" />
         </button>
       </div>
     </article>

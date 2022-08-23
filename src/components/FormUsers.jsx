@@ -110,7 +110,7 @@ const FormUsers = ({
       <img
         onClick={handleCloseForm}
         className="btn-close"
-        src="../../public/imgs/x.png"
+        src="/imgs/x.png"
         alt="close icon"
       />
     </form>
